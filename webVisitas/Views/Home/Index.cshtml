@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "libro de visitas a la Casa de Tucumán";
+   
+}
+
+<div class="main">
+    <div class="row">
+        <div class="col">
+            <h1>Libro de visitas a la Casa de Tucumán</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3>Dejenos saber sus comentarios</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="text-center">
+                <img src="./img/casaTucuman.jpg" class="rounded" alt="Casita de tucumán" width="200" height="100">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+            <div class="col shadow-none p-3 mb-5 bg-light rounded">
+                <form id="form1" method="post" action="/AgregarVisita/Index">
+                    <div class="form-group">
+                        <label for="FirstName">Nombre y Apellido</label>
+                        <input type="text" class="form-control" id="FirstName" name="FirstName" aria-describedby="Primer Nombre" placeholder="Ingrese su nombre y apellido" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email </label>
+                        <input type="email" class="form-control" id="Email" name="Email" aria-describedby="emailHelp" placeholder="ingrese email" required>
+                        <small id="emailHelp" class="form-text text-muted">Nunca compartiremos sus datos con nadie</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="observaciones">Comentario</label>
+                        <textarea class="form-control" name="observaciones" id="observaciones" rows="3" required></textarea>
+
+                    </div>
+                    <input type="submit" value="Guardar" />
+                </form>
+            </div>
+        </div>
+    </div>
